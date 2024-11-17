@@ -1,0 +1,12 @@
+# apps/mongodb/persistent-volume.yaml  9558oqGh8WqnOMJq
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mongodb-pvc
+  namespace: demo
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi

@@ -1,0 +1,12 @@
+# apps/backend/configmap.yaml
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: backend-config
+  namespace: demo
+data:
+  config.json: |
+    {
+      "database": "demo",
+      "logLevel": "info"
+    }
